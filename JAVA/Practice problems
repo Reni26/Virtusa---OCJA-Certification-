@@ -1,1 +1,199 @@
+Arrays
+class SDemo1
+{
+ 	public static void main(String args[])
+ 	{
+  		int a[]; 
+  		a=new int[3];
 
+  		a[0]=100;
+  		a[1]=200;
+  		a[2]=300;
+
+  		int v;
+  		for(int i=0;i<a.length;i++)
+  		{
+   			v=a[i];
+   			System.out.println("   "+v);      
+  		}
+ 	}
+}
+-----------------------
+
+class solution
+{
+ 	public static void main(String args[])
+ 	{
+  		int a[]=new int[3];
+
+  		a[0]=100;
+  		a[1]=200;
+  		a[2]=300;
+
+  		int v;
+
+  		for(int i=0;i<a.length;i++)
+  		{
+   			v=a[i];
+   			System.out.println("   "+v);      
+  		}
+ 	}
+}
+--------------------
+class test
+{
+ 	public static void main(String args[])
+ 	{
+  		int a[]=new int[10];
+
+ 		int value=100;
+
+  		for(int i=0;i<a.length;i++)
+  		{
+    			a[i]=value;
+    			value+=50;
+  		}
+  
+  		int v;
+  		for(int j=0;j<a.length;j++)
+  		{
+   			v=a[j];
+   			System.out.println("   "+v);      
+  		}
+ 	}
+}
+
+------------------
+
+class test1
+{
+ 	public static void main(String args[])
+ 	{
+  		int a[]={10,20,30,40,50,60,70,80};
+
+  		int v;
+  		for(int i=0;i<a.length;i++)
+  		{
+   			v=a[i];
+   			System.out.println("   "+v);      
+  		}
+ 	}
+}
+
+--------------------
+
+class A
+{
+ 	int x;
+ 	void add()
+ 	{
+  		System.out.println(" X  : "+x);
+ 	}
+}
+class B extends A
+{
+ 	int y;
+ 	void sum()
+ 	{
+ 		System.out.println(" Y  : "+y);
+ 	}
+}
+class SDemo5
+{
+ 	public static void main(String args[])
+ 	{
+   		A s1=new A();
+  		s1.x=100;
+
+   		B s2=new B();
+   		s2.x=200;
+   		s2.y=300;
+
+
+   		A ob[]=new A[2];
+
+   		ob[0] = s1;
+   		ob[1] = s2;    // A ss1 = s2;
+
+   		ob[0].add();
+   		ob[1].add(); 
+
+   		System.out.println("--------------------------------------");
+
+   		B s3=(B)ob[1]; // B ss2 = (B) ss1;
+
+   		s3.add();
+   		s3.sum();		
+   		System.out.println("--------------------------------------");
+ 	}
+}
+
+------------------------
+
+class X{
+ 	int x;
+ 	void add(){
+  		System.out.println(" X  : "+x);
+ 	}
+}
+
+class Y{
+ 	int y;
+ 	void sum(){
+ 		System.out.println(" Y  : "+y);
+ 	}
+}
+class Z{
+ 	int z;
+ 	void test(){
+  		System.out.println(" Z  : "+z);
+	}
+}
+
+class SDemo5{
+ 	public static void main(String args[]){
+            
+   		X o1=new X();
+   		o1.x=100;
+
+   		Y o2=new Y();
+   		o2.y=200;
+
+   		Z o3=new Z();
+   		o3.z=300;
+               
+                Object s1 = new X();
+                Object s2 = new Y();
+                Object s3 = new Z();
+                
+                Object s4 = o1;
+                Object s5 = o2;
+                Object s6 = o3;
+              
+
+
+
+		Object ob[] = new Object[3];
+
+   		ob[0] = o1;
+   		ob[1] = o2;
+   		ob[2] = o3;
+
+   		System.out.println(" ");
+
+   		X ss1=(X)ob[0];
+   		ss1.add();
+
+   		System.out.println(" ");
+
+   		Y ss2=(Y)ob[1];
+   		ss2.sum();
+
+   		System.out.println(" e");
+
+   		Z ss3=(Z)ob[2];
+   		ss3.test();
+
+   		System.out.println(" ");
+ 	}
+}
