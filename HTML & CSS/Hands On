@@ -1,1 +1,327 @@
+LOGIN
+<html>
+    <head>
+        <title>
+            SAMPLE
+        </title>
+        <style>
+            body{
+                    margin:0px;
+                    padding:0px;
+                    background: url("http://www.dreamtemplate.com/dreamcodes/bg_images/color/c10.jpg");
+                    background-size: cover;
+                    font-family: sans-serif;
+                }
+            .login {
+                height: 420px;
+                width: 320px;
+                background: #000;
+                color:aliceblue;
+                top:50%;
+                left:50%;
+                position: absolute;
+                transform:translate(-50%,-50%);
+                box-sizing: border-box;
+                align-items: center;
+                padding:10px 40px;
+            }
+            .image {
+                width: 30%;
+                border-radius: 50%;
+                position: absolute;
+                top:-50px;
+                left:35%;
 
+            }
+            .form {
+                left:15%;
+            }
+            .button {
+                padding: 5px 20px;
+            }    
+        </style>
+    </head>
+    <body class="bdy">
+        <div class="login">
+            <img src="https://www.travelanddestinations.com/wp-content/uploads/2019/05/Blank-Profile.jpg" class="image"><br><br>
+            <center><h2>LOGIN</h2></center>
+            <form action="home.html" method="post" class="form">
+                <p>USERNAME</p>
+                <INPUT TYPE="text" class="name" placeholder="Enter Your Username" minlength="8" maxlength="12" required>
+                <p>PASSWORD</p>
+                <input type="password" class="name" minlength="8" maxlength="12" placeholder="Enter Password" required><br>
+                <center><br><br><input type="button" value="Login"class="button" ></center>
+            </form>
+            Not a Member?
+            <a href="regn.html">
+                Join us
+            </a>
+        </div>
+    </body>
+</html>
+------------
+
+REGISTRATION
+
+<html>
+   
+<head>
+       
+<title>
+ SAMPLE
+ </title>
+       
+<style>
+           
+body{
+                   
+margin:0px;
+                   
+padding:0px;
+                   
+background: url("http://www.dreamtemplate.com/dreamcodes/bg_images/color/c10.jpg");
+                   
+background-size: cover;
+                   
+font-family: sans-serif;
+                   
+color: rgb(235, 235, 226);
+               
+}
+           
+.login {
+               
+height: 500px;
+               
+width: 500px;
+               
+background: #000;
+               
+color:aliceblue;
+               
+top: 50%;
+               
+left: 50%;
+               
+position: absolute;
+               
+transform:translate(-50%,-50%);
+               
+box-sizing: border-box;
+               
+align-items: center;
+               
+padding:10px 40px;
+           
+}
+           
+.form {
+               
+left:15%;
+           
+}
+           
+.button {
+ 
+background-color:black;              
+
+color:white;
+padding: 10px 20px;
+font-size: 20px;
+margin: 4px 2px;            
+}    
+       
+</style>
+   
+</head>
+
+<script>
+   
+function validatePassword(){
+   
+var p= document.getElementById("password").value;
+   
+var c= document.getElementById("con_password").value;
+   
+if(p!=c) {
+       
+alert("passwords doesn't match");
+       
+}
+   
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="login">
+
+<h1 align="center"><u>REGISTRATION FORM</u></h1>
+<form name="reg_form" action="http://localhost/start.php" method="post" style="padding-top: 1%;">
+
+<center>
+<table style="border-spacing:15px;">
+
+<tr>
+   
+<td><label for="uname">Username :</label></td>
+   
+<td>
+       
+<input type="text" name="uname" placeholder="Enter username" minlength="5" maxlength="15" required>
+   
+</td>
+</tr>
+
+<tr>
+
+<td>Name:</td>
+
+<td><input type="text" name="name" value="" placeholder="Enter your name" required></td>
+
+</tr>
+
+<tr>
+   
+<td>Password</td>
+   
+<td><input type="password" id="password" minlength="8" maxlength="15" pwd="pwd" required></td>
+
+</tr>
+
+<tr>
+   
+<td>Confirm-Password</td>
+   
+<td><input type="password" id="con_password" minlength="8" maxlength="15" required></td>
+
+</tr>
+
+<tr>
+
+<td>E-mail:</td>
+<td><input type="email" name="mailid" value="" placeholder="Enter your E-mail" required ></td>
+
+</tr>
+
+<tr>
+
+<td>Contact Number:</td>
+
+<td><input type="tel" id="phone" name="phone" placeholder="Enter contact number" pattern="[0-9]{10}" required></td>
+
+</tr>
+
+<tr>
+
+<td>Gender:</td>
+
+<td><input type="radio" name="gender" value="Male" >Male
+<input type="radio" name="gender" value="Female" >Female</td>
+
+</tr>
+
+<tr>
+
+<td>State:</td>
+
+<td>
+<select name="dept" value="" required>
+
+<option>--Select--</option>
+
+<option>Andhra Pradesh</option>
+
+<option>Assam</option>
+
+<option>Arunachal Pradesh</option>
+
+<option>Bihar</option>
+
+<option>Goa</option>
+
+<option>Gujarat</option>
+
+<option>Jammu and Kashmir</option>
+
+<option>Jharkhand</option>
+
+<option>West bengal</option>
+
+<option>Karnataka</option>
+
+<option>Kerala</option>
+
+<option>Madhya Pradesh</option>
+
+<option>Maharashtra</option>
+
+<option>Manipur</option>
+
+<option>Meghalaya</option>
+
+<option>Mizoram</option>
+
+<option>Nagaland</option>
+
+<option>Orissa</option>
+
+<option>Punjab</option>
+
+<option>Rajasthan</option>
+
+<option>Sikkim</option>
+
+<option>Tamil Nadu</option>
+
+<option>Tripura</option>
+
+<option>Uttarakhand (Uttaranchal)</option>
+
+<option>Uttar Pradesh</option>
+
+<option>Haryana</option>
+
+<option>Himachal Pradesh</option>
+
+<option>Chattisgarh</option>
+</select>
+</td>
+
+</tr>
+
+<tr>
+
+<td>Address:</td>
+
+<td><input type="textarea" name="address" value="" placeholder="Residential address" required></td>
+
+</tr>
+
+<td>Pincode:</td>
+
+<td>
+<input type="tel" name = "pincode" maxlength="6" pattern="[0-9]{3}[0-9]{3}" placeholder="Enter pincode" required></td>
+
+</tr>
+
+</table><br>
+<a href="login.html">
+
+<input type="submit" class = "button" name="finish" value=" Register " onclick="validatePassword()">
+
+</a>
+
+</center>
+
+
+</form>
+
+</div>
+
+</body>
+
+</html>
